@@ -27,7 +27,7 @@ const DevelopersTeam = () => {
       name: "Palani Kumar S",
       designation: "Full-Stack Developer",
       dept:"CSE",
-      image: "public/team/palani.jpg",
+      image: "/team/palani.jpg",
       linkedin: "https://www.linkedin.com/in/palani-kumar-s-a256492b1/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       github: "https://github.com/Palanikumar106"
     },

@@ -76,7 +76,7 @@ export default function IdeathonPage() {
       style={styles.fadeIn}
     >
       {/* Modal */}
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4" onClick={() => setIsModalOpen(false)}>
           <div className="relative max-w-4xl w-full">
             <button 
@@ -89,7 +89,7 @@ export default function IdeathonPage() {
               <X className="w-6 h-6" />
             </button>
             <img
-              src="/public/images/uiux.jpg"
+              src="/images/Ideathon.jpg"
               alt="Ideathon 2025 Poster"
               className="w-full rounded-lg shadow-2xl"
               onError={(e) => {
@@ -99,7 +99,7 @@ export default function IdeathonPage() {
             />
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Navigation Buttons */}
       <div className="fixed top-4 right-4 z-50 flex gap-4">
@@ -153,11 +153,10 @@ export default function IdeathonPage() {
         >
           <div className="p-6">
             <div 
-              onClick={() => setIsModalOpen(true)}
-              className="rounded-lg overflow-hidden border border-purple-600/30 aspect-square relative cursor-pointer"
+              className="rounded-lg overflow-hidden border border-purple-600/30 aspect-square relative "
             >
               <img
-                src="/public/images/Ideathon.jpg"
+                src="/images/Ideathon.jpg"
                 alt="Ideathon 2025 Poster"
                 className="absolute inset-0 w-full h-full object-fill"
                 onError={(e) => {
