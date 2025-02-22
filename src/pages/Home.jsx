@@ -130,8 +130,8 @@ function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(78,8,243,0.127),transparent_70%)] blur-[40px]" />
 
           <div className="container mx-auto text-center px-4">
-            <motion.div
-              className="font-netron text-[45px] sm:text-[45px] md:text-[60px] lg:text-[75px] text-white mb-2 sm:mb-6 animate-glow"
+          <motion.div
+              className="font-netron text-[45px] sm:text-[45px] md:text-[60px] lg:text-[75px] text-white mb-2 sm:mb-4 animate-glow"
               initial={{ scale: 2, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{
@@ -140,9 +140,27 @@ function Home() {
                 opacity: { duration: 1.2, ease: "easeOut" }
               }}
             >
-              NEC TECH FEST
+              NEC TECH FEST'25
             </motion.div>
 
+            <motion.div
+              className="relative overflow-hidden mb-4 sm:mb-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 1,
+                duration: 1.2,
+                ease: "easeOut"
+              }}
+            >
+              <div
+                 className="text-[18px] sm:text-[18px] md:text-[22px] lg:text-[25px] font-['Orbitron'] tracking-[1px] sm:tracking-[1.5px] md:tracking-[2px] bg-gradient-to-b from-[#edeffd] to-[#524d57] bg-clip-text text-transparent [text-shadow:2px_2px_4px_rgba(192,192,192,0.3)] transform-none opacity-100 font-bold"
+
+                //className="text-[18px] sm:text-[18px] md:text-[20px] lg:text-[22px] font-bold tracking-[2px] sm:tracking-[3px] md:tracking-[5px] text-white relative inline-block before:content-[attr(data-glitch)] before:absolute before:top-0 before:left-0 before:text-[#0ff] before:opacity-50 before:animate-glitch after:content-[attr(data-glitch)] after:absolute after:top-0 after:left-0 after:text-[#ff00ff] after:opacity-50 after:animate-glitch"
+              >
+                A Stage for Multidisciplinary Fusion
+              </div>
+            </motion.div>
             <motion.div
               className="relative overflow-hidden mb-6 sm:mb-8"
               initial={{ opacity: 0, y: 20 }}

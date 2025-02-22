@@ -81,16 +81,14 @@ const WorkshopPage = () => {
             studentCoordinators: fetchedWorkshop.studentCoordinators || "TBD",
             resourcePerson: {
               name: fetchedWorkshop.resourcePerson?.name || "TBD",
-              image:
-                fetchedWorkshop.resourcePerson?.image ||
-                "public\images\person1.jpg",
+              
               designation:
                 fetchedWorkshop.resourcePerson?.designation || "Expert",
               organization:
                 fetchedWorkshop.resourcePerson?.organization || "TBD",
               bio:
                 fetchedWorkshop.resourcePerson?.bio ||
-                "Biography coming soon...",
+                "",
               expertise: fetchedWorkshop.resourcePerson?.expertise || [],
               vidwanLink: fetchedWorkshop.resourcePerson?.vidwanLink || null,
             },
@@ -257,28 +255,7 @@ const WorkshopPage = () => {
     <div className="p-4">
       <div className="rounded-lg overflow-hidden border border-purple-600/30 relative">
         <div className="min-h-[200px] max-h-[600px] h-auto flex items-center justify-center bg-black/20">
-          {workshop.resourcePerson.vidwanLink ? (
-            <a 
-              href={workshop.resourcePerson.vidwanLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full h-full flex items-center justify-center relative group"
-            >
-              <img
-                src={workshop.poster}
-                alt={workshop.name}
-                className="w-auto h-auto max-w-full max-h-[600px] object-contain group-hover:opacity-90 transition-opacity duration-300"
-                onError={(e) => {
-                  e.target.src = "/api/placeholder/800/800";
-                  e.target.onerror = null;
-                }}
-              />
-              <div className="absolute bottom-3 right-3 bg-purple-900/70 text-white px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-2 backdrop-blur-sm">
-                <span className="text-sm font-medium">View Profile</span>
-                <ExternalLink className="w-4 h-4" />
-              </div>
-            </a>
-          ) : (
+           
             <img
               src={workshop.poster}
               alt={workshop.name}
@@ -288,7 +265,6 @@ const WorkshopPage = () => {
                 e.target.onerror = null;
               }}
             />
-          )}
         </div>
       </div>
     </div>
@@ -394,7 +370,7 @@ const WorkshopPage = () => {
                       About Resource Person
                     </p>
                     <a
-                      href={workshop.resourcePerson.vidwanLink}
+                      href={`https://${workshop.resourcePerson.vidwanLink}`}
                       className="text-sm text-purple-300 hover:text-white transition-colors duration-300 mt-0.5 flex items-center"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -448,15 +424,21 @@ const WorkshopPage = () => {
               {/* Resource Person Image */}
               <div className="md:w-1/3">
                 <div className="rounded-lg overflow-hidden border border-purple-600/30">
-                  <a href="https://www.google.com/" target="_blank"><img
-                    src={workshop.resourcePerson.image}
+                {workshop.resourcePerson.vidwanLink ? <a href={`https://${workshop.resourcePerson.vidwanLink}`} target="_blank">
+                  <img
+                    src="/images/person1.jpg"
                     alt={workshop.resourcePerson.name}
                     className="w-full h-auto object-cover"
-                    onError={(e) => {
-                      e.target.src = "/api/placeholder/400/400";
-                      e.target.onerror = null;
-                    }}
+                    
                   /></a>
+                  : <img
+                  src="/images/person1.jpg"
+                  alt={workshop.resourcePerson.name}
+                  className="w-full h-auto object-cover"
+                  
+                />
+                  }
+                  
                 </div>
               </div>
 
@@ -521,53 +503,7 @@ const WorkshopPage = () => {
         </div>
       </div>
 
-      {workshop.video && (
-        <div className="max-w-5xl mx-auto mt-6">
-          <div
-            className="w-full bg-purple-900/10 backdrop-blur-lg rounded-xl border border-purple-600/20 
-                          shadow-[0_0_20px_rgba(128,0,255,0.2)]"
-          >
-            <div className="p-4">
-              <h2
-                className="text-lg font-medium text-white mb-4
-                             [text-shadow:_0_0_5px_#fff,_0_0_10px_#8000ff]"
-              >
-                Workshop Video
-              </h2>
-
-              <div className="relative w-full aspect-video">
-                <video
-                  ref={videoRef}
-                  src={workshop.video}
-                  className="w-full h-full object-cover rounded-lg"
-                  playsInline
-                  muted
-                />
-                {/* Progress Bar */}
-                <div
-                  className="absolute bottom-0 left-0 w-full h-1 bg-purple-900/50 cursor-pointer"
-                  onClick={handleSeek}
-                >
-                  <div
-                    className="h-full bg-purple-600"
-                    style={{
-                      width: `${videoProgress}%`,
-                      transition: "width 0.1s linear",
-                    }}
-                  />
-                </div>
-                <button
-                  onClick={toggleVideo}
-                  className="absolute bottom-4 right-4 bg-purple-600/50 text-white p-2 rounded-full 
-                               hover:bg-purple-600/70 transition-all duration-300"
-                >
-                  {isVideoPlaying ? <Pause /> : <Play />}
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 };

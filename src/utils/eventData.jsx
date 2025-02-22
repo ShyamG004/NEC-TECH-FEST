@@ -381,7 +381,7 @@ export const events = [
       organization: "Vibathi Labs",
       bio: "Ms. Sujitha Jayaraman is an accomplished technology leader with expertise in Oracle APEX, cloud solutions, and AI-driven innovations. As the Associate Vice President at Vibathi Labs, she has spearheaded numerous transformative projects that integrate cutting-edge technologies to solve real-world business challenges. Her work focuses on enabling organizations to adopt scalable, intelligent solutions for enhanced operational efficiency and innovation.",
       expertise: ["Oracle APEX", "Cloud Solutions", "AI and Automation", "Predictive Analytics"],
-      link: "www.vibathilabs.com"
+      vidwanLink: "www.vibhathi.com/"
     },
     video: "/images/workshop-video.mp4",
 
@@ -406,7 +406,7 @@ export const events = [
     description: "Join our hands-on workshop, Mastering Advanced PL/SQL for Database Excellence, and unlock the secrets to building high-performance, scalable, and secure database applications. Dive deep into advanced concepts like query optimization, complex data manipulation, robust error handling, and dynamic SQL. Learn to write efficient code, optimize performance, and implement best practices for security and reliability. Whether you're an experienced developer or a database professional, this workshop will equip you with the skills and techniques to elevate your PL/SQL expertise and create next-generation database solutions.",
     resourcePerson: {
       name: "Mr. Karkuvel Thangamariappan",
-      image: "/images/person3.jpg",
+      image: "/images/person1.jpg",
       designation: "Associate Vice President",
       organization: "Vibathi Labs",
       bio: "Mr. Karkuvel Thangamariappan is a seasoned database expert and technology leader specializing in PL/SQL, database optimization, and enterprise solutions. As the Associate Vice President at Vibathi Labs, he has led numerous projects focused on enhancing database performance, scalability, and security. With years of experience in database management and programming, he brings a wealth of knowledge and practical insights to help professionals master advanced PL/SQL techniques.",
@@ -434,7 +434,7 @@ export const events = [
     description: "Explore the fundamentals of machine learning, from data preparation and model building to evaluation and deployment. Learn to apply popular algorithms, work with real-world datasets, and build intelligent applications. Whether you're a beginner or a seasoned developer, this workshop will equip you with the tools and techniques to harness the potential of machine learning and create intelligent solutions.",
     resourcePerson: {
       name: "Mr. Shunmugapriyan",
-      image: "/images/person4.jpg",
+      image: "/images/person1.jpg",
       designation: "Technical Lead",
       organization: "Impelsys India Pvt Ltd, Bangalore",
       bio: "Mr. Shunmugapriyan is a highly skilled technical lead specializing in machine learning, artificial intelligence, and data science. With extensive experience at Impelsys India Pvt Ltd, he has successfully led numerous projects focused on developing intelligent systems and data-driven solutions. His expertise spans across designing ML models, working with large datasets, and deploying scalable AI applications. He is passionate about simplifying complex concepts and empowering learners to unlock the potential of machine learning.",
@@ -1055,7 +1055,7 @@ export const events = [
     description: "Gain hands-on experience in building AR mobile applications! Learn AR fundamentals, set up Unity with Vuforia, and develop your first AR app with expert guidance.",
     resourcePerson: {
       name: "Mr. J. Karthikeyan",
-      image: "ARDevelopment.jpg",
+      image: "/images/person1.jpg",
       designation: "(AP/CSE)",
       organization: "National Engineering College",
       bio: "Mr. Karthikeyan J is an Assistant Professor in the Department of Computer Science and Engineering at National Engineering College, Kovilpatti. With over a decade of academic and research experience, he has contributed to projects like cognitive rehabilitation for autism using VR and authored multiple research publications. He is also a recipient of the NPTEL Discipline Star award and is passionate about emerging technologies in computer science.",
@@ -2881,7 +2881,7 @@ export const events = [
     category: "technical",
     tags: ["Data Science"],
     date: "2025-03-14",
-    startingtime: "3:15 PM",
+    startingtime: "1:15 PM to 3:00 PM",
     venue: "Deep Learning Lab",
     registrationLink: "",
     organizer: "AI&DS Association",
@@ -3146,8 +3146,8 @@ export const events = [
   },
   {
     id: 103,
-    name: "GenAI for web development",
-    title: "GenAI for web development",
+    name: "GenAI for web soultions",
+    title: "GenAI for web soultions",
     subtitle: "GenAI for Web Development Workshop",
     description: "Explore the power of Generative AI in web development at this hands-on workshop. Learn how AI-driven tools can accelerate coding, automate design, and enhance user experiences. Discover the latest advancements in AI-powered website generation, UI/UX optimization, and intelligent code assistants to streamline development workflows.",
     image: "/events/aids/GenAI_for_web_development.jpg",
@@ -3181,18 +3181,18 @@ export const events = [
     subtitle: "Mysteries of Prime Numbers, The Golden Ratio, Calculus in Real-World Applications",
     description: "A technical mathematical event that challenges students to explore the fascinating world of mathematics and its real-world applications",
     image: "/events/sh/posterpresenationsh.jpg",
-    poster: "/events/sh/posterpresentationsh.jpg",
+    poster: "/events/sh/posterpresenationsh.jpg",
     department: "S&H Association",
     category: "technical",
     tags: ["Poster Presentation"],
-    date: "2025-03-14",
-    startingTime: "11:00 AM to 12:30 PM",
-    venue: "Mathematics Lab",
+    date: "2025-03-15",
+    startingTime: "9:30 AM to 10:45 PM",
+    venue: "S&H Drawing Hall",
     registrationLink: "",
     organizer: "Maths club",
-    facultyCoordinator: "Dr.M.Annapoopathi, AP(SG)/S&H, Dr.R.Geetha, AP/S&H",
+    facultyCoordinator: "Mr.Sivabalan",
     studentCoordinators: [
-      { name: "C.Harini", contact: "9342092304" }
+      { name: "Ms.T.Hareni", contact: "9597297700" }
     ],
     rules: [
       "Design an A3/A4 poster, covering relevant content, properties, patterns, and applications.",
@@ -3262,10 +3262,9 @@ export const events = [
     venue: "LH3(S&H)",
     registrationLink: "",
     organizer: "Science and Humanities",
-    facultyCoordinator: "Dr.A.V.P.Rakkini, Dr.M.Aravind",
+    facultyCoordinator: "Dr.M.Aravind",
     studentCoordinators: [
-      { name: "A.Jeno Kevin", contact: "9600786645" },
-      { name: "L.Dhessiha", contact: "9843096543" }
+      { name: "G.Nandhini ", contact: "7418894891" },
     ],
     rules: [
       "Team size: Two participants per team",
@@ -3290,7 +3289,7 @@ export const events = [
     tags: ["Memory"],
     date: "2025-03-15",
     venue: "S&H English Lab",
-    startingTime: "1:45 PM",
+    startingTime: "1:15 PM to 3:00 PM",
     registrationLink: "",
     organizer: "Science and Humanities",
     facultyCoordinator: "Ms.S.Gopika Devi, Mr.Karthik",
@@ -3349,15 +3348,11 @@ export const events = [
     venue: "Seminar Hall",
     registrationLink: "",
     organizer: "Science & Humanities",
-    facultyCoordinator: "",
+    facultyCoordinator: "Dr. M.Annapoopathy",
     studentCoordinators: [
       { 
         name:"Renuga devi S",
         contact:"9025286513",
-      },
-      {
-        name: "Jeyapandi",
-        contact: "8122125950",
       },
     ],
     rules: [
@@ -3383,19 +3378,15 @@ export const events = [
     category: "non-tech",
     tags: ["Memory", "Team Work"],
     date: "2025-03-15",
-    startingTime: "3:15 to 5 pm",
+    startingTime: "1:15 to 3:00 PM",
     venue: "Seminar Hall",
     registrationLink: "",
     organizer: "Quiz Club",
-    facultyCoordinator: "Mr. P. Ganapathy AP, Ms. P. Dharani AP",
+    facultyCoordinator: "Ms. P. Dharani AP",
     studentCoordinators: [
       {
         name:"S Suriya",
         contact:"7418721670",
-      },
-      {
-        name: "Mr. R. Gurusivabalan",
-        contact: "9597089504",
       },
     ],
     rules: [
@@ -3419,22 +3410,14 @@ export const events = [
     tags: ["Gaming"],
     date: "2025-03-15",
     startingTime: "1:15 to 3 PM",
-    venue: "HALL NO 2, HALL NO 3 / S&H",
+    venue: "LH2 and LH3  / S&H",
     registrationLink: "",
     organizer: "Science Club",
-    facultyCoordinators: "Dr. V. Ramasubbu, Dr. B. Rajkumar",
+    facultyCoordinators: "Dr.APVRakkini",
     studentCoordinators: [
       {
         name: "Dhessiha L",
         contact: "9843096543",
-      },
-      {
-        name: "Nanthini G",
-        contact: "7418894891",
-      },
-      {
-        name: "Mahesh Raja E",
-        contact: "7708235498",
       },
     ],
     rules: [
@@ -3452,14 +3435,14 @@ export const events = [
     id: 112,
     name: "ELEVATE YOUR MIND: THE PATH TO APTITUDE SUCCESS",
     title: "ELEVATE YOUR MIND: THE PATH TO APTITUDE SUCCESS",
-    startingTime: "9.30 AM to 11:00 AM",
+    startingTime: "9;30 a.m-11.00 a.m",
     date: "14-3-2025",
     image: "/events/sh/Elevate Your Mind.jpg",
     poster: "/events/sh/Elevate Your Mind.jpg",
     organizer: "S&H Association",
     category: "workshops",
     tags: ["Aptitude"],
-    venue: "",
+    venue: "Smart class Room (S & H)",
     facultyCoordinator: "Dr.S.S.Basitha Parveen",
     studentCoordinators: [{ name: "S.Gomathisankar", contact: "6374367922" }],
     description: "This Aptitude Training Workshop is designed to enhance participants' problem-solving abilities",
@@ -3479,7 +3462,7 @@ export const events = [
     name: "Workshop on Circuit Symphony: Crafting Electronics with Tinker",
     title: "Workshop on Circuit Symphony: Crafting Electronics with Tinker",
     startingTime: "11:00 AM to 12:30 PM",
-    date: "14.03.2025",
+    date: "14-03-2025",
     image: "/events/sh/Workshop on Circuit Symphony.png",
     poster: "/events/sh/Workshop on Circuit Symphony.png",
     organizer: "S&H Association",
@@ -3490,7 +3473,7 @@ export const events = [
     studentCoordinators: [{ name: "Sujith Kumar", contact: "8248166737" }],
     description: "In the modern era of electronics and rapid prototyping, simulation tools play a crucial role in designing, testing, and refining circuits before actual implementation. 'Circuit Symphony: Crafting Electronics with Tinkercad' is a hands-on workshop designed to introduce participants to the fundamentals of electronic circuit design using Tinkercad, a beginner-friendly yet powerful online simulation tool.",
     resourcePerson: {
-      name: "Dr.A.Nichelson",
+      name: "Dr.A.Nichelson, Dr.Prabhu",
       image: "",
       designation: "Assistant Professor(SG)",
       organization: "Dept of S&H, National Engineering College",
@@ -3512,7 +3495,7 @@ export const events = [
     category: "workshops",
     tags: ["Public Speaking"],
     venue: "",
-    facultyCoordinator: "Ms.S.Jeba",
+    facultyCoordinator: "Dr.S.Maheswari",
     studentCoordinators: [{ name: "Keerthana", contact: "9361411047" }],
     description: "The 'Master Your Mic' workshop enhances public speaking by improving speaking style for professional success.",
     resourcePerson: {
@@ -3530,7 +3513,7 @@ export const events = [
     id: 115,
     name: "Workshop on Ecoche Insights-Instrumental Techniques for Environmental",
     title: "Workshop on Ecoche Insights-Instrumental Techniques for Environmental",
-    startingTime: "11 to 12:30 pm",
+    startingTime: "9:30 AM to 10:45 AM",
     date: "2025-03-15",
     image: "/events/sh/Workshop on Ecoche Insights.png",
     poster: "/events/sh/Workshop on Ecoche Insights.png",
@@ -3556,14 +3539,14 @@ export const events = [
     id: 116,
     name: "The Essential Mathematics behind Engineering Breakthrough",
     title: "The Essential Mathematics behind Engineering Breakthrough",
-    startingTime: "1:15 to 3:00 pm",
+    startingTime: "11:00 AM to 12:30 PM",
     date: "15-3-2025",
     image: "/events/sh/The Essential Mathematics behind Engineering Breakthrough.png",
     poster: "/events/sh/The Essential Mathematics behind Engineering Breakthrough.png",
     organizer: "S&H Association",
     category: "workshops",
     tags: [],
-    venue: "S&H Smart Class",
+    venue: "S&H Smart Classroom",
     facultyCoordinator: "Dr.M.Dhivya",
     studentCoordinators: [{ name: "Mr.P.Abraham", contact: "9487880943" }],
     description: "This workshop explores bridge theoretical knowledge with practical applications. Engineering breakthroughs are built on a strong foundation of mathematical principles. This event explores the mathematical principles behind QR code generation, cryptographic password creation, and their connections to number theory and computational tools like GeoGebra. After the completion of the workshop, participants will explore modular arithmetic, prime number theory, and cryptographic principles that ensure data security.",

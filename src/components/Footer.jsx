@@ -54,10 +54,10 @@ const Footer = () => {
             </h4>
             <nav className="flex flex-col gap-4">
               {[
-                { name: "About Us", path: "#", onClick: scrollToTop },
+                { name: "About Us", path: "/", onClick: scrollToTop },
                 {
                   name: "Events",
-                  path: "/associations/department/cse-association",
+                  path: "/events/technical",
                 },
                 { name: "Contact", path: "/events/contact" },
               ].map((item) => (
@@ -103,7 +103,7 @@ const Footer = () => {
               More Details
             </h4>
             <nav className="flex flex-col gap-4">
-              {[{ name: "Guidelines", path: "#", onClick: scrollToTop },{name:"Developers"}].map(
+              {[{name:"Developers",path:"/developers",onClick: scrollToTop}].map(
                 (item) => (
                   <a
                     key={item.name}

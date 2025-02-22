@@ -17,6 +17,7 @@ import UserDetails from './components/Registration/UserDetails';
 import EventSelection from './components/Registration/EventSelection';
 import Payment from './components/Registration/Payment';
 import IdeathonPage from './components/events/IdeathonPage';
+import DevelopersTeam from './components/Developers';
 function App() {
 
   return (
@@ -24,7 +25,7 @@ function App() {
       <BrowserRouter>
         <Layout>
        {/* <Particle />  */}
-      <ScrollToTop/>
+      {/* <ScrollToTop/> */}
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/associations/department/:department" element={<Event />} /> */}
@@ -38,6 +39,7 @@ function App() {
           <Route path="/registration/userdetail" element={<UserDetails/>} />
           <Route path="/registration/eventselection" element={<EventSelection/>} />
           <Route path="/registration/payment" element={<Payment/>} />
+          <Route path="/developers" element={<DevelopersTeam/>} />
         </Routes>
         </Layout>
       </BrowserRouter>

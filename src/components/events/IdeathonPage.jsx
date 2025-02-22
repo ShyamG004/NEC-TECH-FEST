@@ -42,28 +42,14 @@ export default function IdeathonPage() {
     { title: "Business Viability", description: "Startup potential", icon: <DollarSign className="w-6 h-6" /> }
   ];
 
-  const templates = [
-    "/images/image.png", 
-    "/api/placeholder/800/450", 
-    "/api/placeholder/800/450", 
-    "/api/placeholder/800/450", 
-    "/api/placeholder/800/450", 
-    "/api/placeholder/800/450", 
-    "/api/placeholder/800/450"
-  ];
+ 
 
   const handleBack = () => {
     setNavigating(true);
     window.history.back();
   };
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === templates.length - 1 ? 0 : prev + 1));
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? templates.length - 1 : prev - 1));
-  };
+  
 
   useEffect(() => {
     const styleSheet = document.createElement("style");
@@ -242,7 +228,7 @@ export default function IdeathonPage() {
       {/* Tabs Section */}
       <div className="max-w-6xl mx-auto mt-6 mb-4">
         <div className="flex flex-wrap justify-center gap-4">
-          {['overview', 'structure', 'prizes', 'criteria', 'templates'].map((tab) => (
+          {['overview', 'structure', 'prizes', 'criteria'].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -351,73 +337,7 @@ export default function IdeathonPage() {
               </div>
             )}
 
-{activeTab === 'templates' && (
-  <div>
-    <h2
-      className="text-xl font-medium text-white mb-6
-                [text-shadow:_0_0_5px_#fff,_0_0_10px_#8000ff] tracking-widest"
-    >
-      Presentation Templates
-    </h2>
-    <div className="relative">
-      <div className="overflow-hidden rounded-lg border border-purple-600/30">
-        <img
-          src={templates[currentSlide]}
-          alt={`Template slide ${currentSlide + 1}`}
-          className="w-full h-auto aspect-video object-cover"
-        />
-      </div>
-      
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-colors"
-      >
-        <ChevronLeft className="w-6 h-6" />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-colors"
-      >
-        <ChevronRight className="w-6 h-6" />
-      </button>
-      
-      {/* Slide Indicator */}
-      <div className="mt-4 flex justify-center">
-        <p className="text-white">
-          Slide {currentSlide + 1} of {templates.length}
-        </p>
-      </div>
-    </div>
-    
-    {/* Download Button */}
-    <div className="mt-8 flex justify-center">
-      <a 
-        href="/public/images/template.pptx" 
-        download
-        className="flex items-center gap-2 px-6 py-3 bg-purple-700 hover:bg-purple-600 rounded-lg text-white font-medium transition-colors duration-300 shadow-lg hover:shadow-purple-500/50"
-      >
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          width="24" 
-          height="24" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
-          strokeWidth="2" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-          className="w-5 h-5"
-        >
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-          <polyline points="7 10 12 15 17 10"></polyline>
-          <line x1="12" y1="15" x2="12" y2="3"></line>
-        </svg>
-        Download Template
-      </a>
-    </div>
-  </div>
-)}
+
           </div>
         </div>
       </div>
